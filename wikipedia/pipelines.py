@@ -17,7 +17,7 @@ import logging
 class MongoPipeline(object):
 
 
-    collection_name = 'top_reddit_posts'
+    collection_name = 'covid_data'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
