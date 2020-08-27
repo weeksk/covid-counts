@@ -1,6 +1,6 @@
 import scrapy
-
 from ..items import WikipediaItem
+from datetime import datetime
 
 
 
@@ -51,11 +51,11 @@ class WikipediaSpider(scrapy.Spider):
 
 
 
-
+        items['covid_data_retrieval_time'] = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
         items['covid_locations'] = covid_locations
-        items['covid_cases_test'] = covid_cases_test
-        items['covid_deaths_test'] = covid_deaths_test
-        items['covid_recoveries_test'] = covid_recoveries_test
+        items['covid_cases'] = covid_cases_test
+        items['covid_deaths'] = covid_deaths_test
+        items['covid_recoveries'] = covid_recoveries_test
         # items['covid_reference_links'] = covid_reference_links
 
         yield items

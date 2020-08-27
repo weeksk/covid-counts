@@ -73,6 +73,7 @@ ITEM_PIPELINES = {
 # config.read(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'settings.cfg'))
 # mlab_uri = config.get('MongoDB', 'mlab_uri')
 
+
 MONGO_URI = "mongodb://kcweeks92:thisisatest@cluster0-shard-00-00.lltxb.mongodb.net:27017,cluster0-shard-00-01.lltxb.mongodb.net:27017,cluster0-shard-00-02.lltxb.mongodb.net:27017/wikipedia-sandbox?ssl=true&replicaSet=atlas-t81s2p-shard-0&authSource=admin&retryWrites=true&w=majority"
 MONGO_DATABASE = 'wikipedia-sandbox'
 
